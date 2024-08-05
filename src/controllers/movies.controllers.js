@@ -27,7 +27,7 @@ const getAll = catchError(async (req, res) => {
 });
 
 const create = catchError(async (req, res) => {
-  const result = await Movie.bulkCreate(req.body);
+  const result = await Movie.create(req.body);
   return res.status(201).json(result);
 });
 
