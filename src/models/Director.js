@@ -1,16 +1,14 @@
-const { DataTypes } =  require('sequelize')
-const sequelize = require('../utils/connection')
+const { DataTypes } = require("sequelize");
+const sequelize = require("../utils/connection");
 
-const Actor = sequelize.define('actor', {
+const Director  = sequelize.define('director', {
   firstName: {
     type: DataTypes.STRING,
     allowNull: false,
-    field: 'first_name'
   },
   lastName: {
     type: DataTypes.STRING,
     allowNull: false,
-    field: 'last_name'
   },
   nationality: {
     type: DataTypes.STRING,
@@ -24,4 +22,4 @@ const Actor = sequelize.define('actor', {
   }
 })
 
-module.exports = Actor
+module.exports = Director;
